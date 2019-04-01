@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>twoway</title>
+    <script src="js/vue.js"></script>
+    <script src="js/main.js"></script>
+</head>
+<body>
+    <div id="app">
+        <input type="text" id='input' v-model='text' />
+        <span id="span">{{text}}</span>
+        <br/>
+        {{text}}
+    </div>
+
+    <script>
+        var vm = new Vue({
+            el: 'app',
+            data: {
+                text: 'hello world'
+            }
+        });
+    </script>
+</body>
+</html>
